@@ -10,7 +10,7 @@ namespace tema1_10
     {
         static void Main(string[] args)
         {
-            //tema 1
+            //tema 1 sa se dea exemple de variabile de mai multe tipuri
             int a = 1000;int b = 2000; int c = 3000;
             float af = 10.05f; float bf = 20.6f;float cf = 23f;
             long al = 50000l;long bl = 70005843l;long cl = 23057483;
@@ -22,7 +22,7 @@ namespace tema1_10
             short ass = -5;short bss = -99;short css = 1244;
             decimal adx = 4635.76m;decimal bdx = 2736402.297457m;decimal cdx = -98745281698.098765m;
 
-            //tema 2
+            //tema 2 , afiseaza Marian hello you
             Console.WriteLine("MArian"); Console.WriteLine("Hello you");
 
             //tema 3
