@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FizzBuzz", "FizzBuzz.csproj
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "inversareLitere", "..\inversareLitere\inversareLitere.csproj", "{2ACCE44A-F5FF-455E-943D-A96B4347CFED}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "suma2nr", "..\suma2nr\suma2nr.csproj", "{38E3E863-E52E-4AAF-972A-659F0D18EF20}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2ACCE44A-F5FF-455E-943D-A96B4347CFED}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2ACCE44A-F5FF-455E-943D-A96B4347CFED}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2ACCE44A-F5FF-455E-943D-A96B4347CFED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{38E3E863-E52E-4AAF-972A-659F0D18EF20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{38E3E863-E52E-4AAF-972A-659F0D18EF20}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{38E3E863-E52E-4AAF-972A-659F0D18EF20}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{38E3E863-E52E-4AAF-972A-659F0D18EF20}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
