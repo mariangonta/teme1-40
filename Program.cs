@@ -4,72 +4,114 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace tema1_10
+namespace tema11_20
 {
     class Program
     {
         static void Main(string[] args)
-        {
-            //tema 1 sa se dea exemple de variabile de mai multe tipuri
-            int a = 1000;int b = 2000; int c = 3000;
-            float af = 10.05f; float bf = 20.6f;float cf = 23f;
-            long al = 50000l;long bl = 70005843l;long cl = 23057483;
-            char ac = 'w';char bc = ',';char cc = '?';
-            byte ab = 0;byte bb = 9;byte cb = 254;
-            bool at = true; bool bt = false;bool ct = true;
-            string ax = "string1";string bs = "string nou";string cs = "Acesta este un string declarat";
-            double ad = 345.987;double bd = 5643d;double cd = -86632.5834;
-            short ass = -5;short bss = -99;short css = 1244;
-            decimal adx = 4635.76m;decimal bdx = 2736402.297457m;decimal cdx = -98745281698.098765m;
+        {//tema 11
+            Console.WriteLine("introduceti un numar pentru tabla inmultirii pana la 10: ");
+            int a11 = Convert.ToInt32(Console.ReadLine());
+            int prod11 = 1;
 
-            //tema 2 , afiseaza Marian hello you
-            Console.WriteLine("MArian"); Console.WriteLine("Hello you");
-
-            //tema 3
-            var asz = "string1"; var bsz = "string nou";var csz = "acesta este un exemplu de string in variabila";
-
-            //tema 4
-            Console.Write("MArian"); Console.WriteLine("Hello");
-
-            //tema 5
-            Console.WriteLine("introducetiva numele :");
-            string nume = Console.ReadLine(); Console.WriteLine("Hello "+nume);
-
-            //tema 6;
-            var a1 = 5;var a2 = 8;var a3 = 9;var a4 = 12;var a5 = 99;
-            int suma1 = a1 + a2 + a3 + a4 + a5;
-            Console.WriteLine(suma1);
-
-            //tema 7
-            int sum2 = 0;
-            Console.WriteLine("introduceti 5 numere pentru a calcula suma lor :");
-            for (int ai = 0; ai < 5; ai++)
+            for (int i = 1; i <= 10; i++)
             {
-                int a71 = Convert.ToInt32(Console.ReadLine());
-                sum2 = a71+sum2;
-                
+                prod11 = a11 * i;
+                Console.WriteLine(prod11);
             }
-            Console.WriteLine(sum2);
 
-            //tema8
-            Console.WriteLine("calculam acum pe 4 linii :");
-            Console.WriteLine(-1+4*6);
-            Console.WriteLine((35+5)%7);
-            Console.WriteLine(14+(-4)*6/11);
-            Console.WriteLine(2+15/6*1-7%2);
+            //tema 12
+            Console.WriteLine("introduceti 4 numere pentru a calcula media lor :");
+            int a112 = Convert.ToInt32(Console.ReadLine()); int a212 = Convert.ToInt32(Console.ReadLine()); int a312 = Convert.ToInt32(Console.ReadLine()); int a412 = Convert.ToInt32(Console.ReadLine());
 
-            //tema9
-            Console.WriteLine("introduceti 3 numere pentru a calcula produsul lor");
-            int a91 = Convert.ToInt32(Console.ReadLine()); int a92 = Convert.ToInt32(Console.ReadLine()); int a93 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(a91*a92*a93);
+            int medie12 = (a112 + a212 + a312 + a412) / 4;
+            Console.WriteLine(medie12);
 
-            // tema 10
-            Console.WriteLine("introduceti 2 numere pentru a calcula suma/diferenta/produsul/impartirea si restul lor");
-            int a101 = Convert.ToInt32(Console.ReadLine()); int a102 = Convert.ToInt32(Console.ReadLine());
-            int suma10 = a101 + a102;int produs10 = a101 * a102;int diferenta10 = a101 - a102;int impartire10 = a101 / a102;int rest10 = a101 % a102;
-            Console.WriteLine(" "+ suma10+" "+produs10+" "+diferenta10+" "+impartire10+" "+rest10);
+            //tema 13
+            Console.WriteLine("introduceti va rog varsta voastra ");
+            int a13 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("aratati mai tanar decat "+ a13+ " varsta dumneavoastra");
+
+            //tema 14
+            Console.Write("introduceti un caracter de la tastatura pentru a fi afisat in moduri diferite :");
+            char a14 = Console.ReadKey().KeyChar;
+            Console.WriteLine(" " + a14 + " " + a14 + " " + a14 + " " + a14);
+            Console.WriteLine($" ", a14, " ", a14, " ", a14, " ", a14);
+            Console.WriteLine($" {0} {0} {0} {0}", a14);
+
+            //tema15
+            //tema 14
+            Console.Write("introduceti un caracter de la tastatura pentru a fi afisat in moduri diferite :");
+            char a15 = Console.ReadKey().KeyChar;
+            Console.WriteLine("" + a15 + "" + a15 + "" + a15 + "" + a15);
+            Console.WriteLine($"", a15, "", a15, "", a15, "", a15);
+            Console.WriteLine($"{0}{0}{0}{0}", a15);
+
+            //tema16
+            Console.Write("introduceti temperatura in grade celsius :");
+            int a16 = Convert.ToInt32(Console.ReadLine());
+            int grKelvin = a16 + 273; int grfah = a16 + 32;
+            Console.WriteLine("gradele celsius "+ a16+ " in kelvin sunt "+ grKelvin+ " iar in fahrain, sunt  "+ grfah);
+
             Console.ReadLine();
 
+            //tema 17
+            Console.WriteLine("introduceti 2 numere de la tastatura pentru a le compara intre ele :");
+            int a171 = Convert.ToInt32(Console.ReadLine()); int a172 = Convert.ToInt32(Console.ReadLine());
+            if (a171==a172)
+            {
+                Console.WriteLine("cele 2 numere introduse sunt egale intre ele !");
+            }
+            else if (a171>a172)
+            {
+                Console.WriteLine("primul numar este mai mare  decat al doilea numar introdus! ");
+            }
+            else
+            {
+                Console.WriteLine("al doilea numar introdus este mai mare decat primul!");
+            }
+
+            // tema 18 par impar numar
+            Console.WriteLine("introduceti un numar intreg pentru a stabili daca este par sau impar :");
+            int a18 = Convert.ToInt32(Console.ReadLine());
+            if (a18%2==0)
+            {
+                Console.WriteLine("Numarul introdus este par !");
+            }
+            else
+            {
+                Console.WriteLine("Numarul introdus este impar !");
+            }
+
+            // tema 19
+            Console.WriteLine("introduceti un numar  pentru a stabili daca este pozitiv sau negativ :");
+            int a19 = Convert.ToInt32(Console.ReadLine());
+            if (a19 >= 0)
+            {
+                Console.WriteLine("Numarul introdus este mai mare decat zero !");
+            }
+            else
+            {
+                Console.WriteLine("Numarul introdus este mai mic decat zero !");
+            }
+
+            // tema20 program magazin
+            Console.WriteLine("introduceti o ora pentru a stabili daca magazinul este deschis sau inchis, ora + minut :");
+            int ora = int.Parse(Console.ReadLine());
+            int minut = int.Parse(Console.ReadLine());
+            if (ora>=9 &&ora<22 && minut>=0&&minut<60)
+            {
+                Console.WriteLine("Magazinul este deschis pentru cumparaturi !");
+            }
+            else if ((ora < 9 && ora > 22 && ora<24 && minut >= 0 && minut < 60))
+            {
+                Console.WriteLine("magazinul este inchis !");
+            }
+            else
+            {
+                Console.WriteLine("nu a fost introdusa o ora corespunzatoare pentru un ceas !");
+            }
+            Console.ReadLine();
         }
     }
 }
